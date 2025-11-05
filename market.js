@@ -4,19 +4,19 @@ class Supermarket {
     this.clients = []; // Lista de clientes suscritos
   }
 
-  // Método para registrar un nuevo cliente
+  // Metodo para registrar un nuevo cliente
   registerClient(client) {
     this.clients.push(client);
     console.log(`${client.name} se ha suscrito a las ofertas del supermercado.`);
   }
 
-  // Método para eliminar un cliente de la lista
+  // Metodo para eliminar un cliente de la lista
   unsubscribeClient(client) {
     this.clients = this.clients.filter(c => c !== client);
     console.log(`${client.name} ha salido de las notificaciones.`);
   }
 
-  // Método para notificar a todos los clientes suscritos
+  // Metodo para notificar a todos los clientes suscritos
   notifyClients(offer) {
     console.log(` Nueva oferta disponible: ${offer}`);
     this.clients.forEach(client => client.update(offer));
