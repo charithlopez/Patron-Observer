@@ -29,7 +29,7 @@ class Client {
     this.name = name;
   }
 
-  // Método que se ejecuta cuando el supermercado envía una nueva oferta
+  // Metodo que se ejecuta cuando el supermercado envía una nueva oferta
   update(offer) {
     console.log(` ${this.name} ha recibido la notificación: "${offer}"`);
   }
